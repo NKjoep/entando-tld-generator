@@ -2,12 +2,11 @@
 
 ## Usage
 
-````
- cd master;
+````bash
+ cd master
  php generate.php
-````
-
-````
- cd develop;
+ cd ..
+ cd develop
  php generate.php
+ 
 ````
