@@ -1,7 +1,7 @@
 <html xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:fo="http://www.w3.org/1999/XSL/Format">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>"aps core tag library"
+<title>Aps Core Tag Library
           (Tag Library Documentation Generator - Generated Documentation)
         </title>
 <link rel="stylesheet" type="text/css" href="../stylesheet.css" title="styie">
@@ -9,7 +9,7 @@
 <script>
             function asd()
             {
-            parent.document.title=""aps core tag library" (Tag Library Documentation Generator - Generated Documentation)";
+            parent.document.title="Aps Core Tag Library (Tag Library Documentation Generator - Generated Documentation)";
             }
           </script>
 <body bgcolor="white" onload="asd();">
@@ -36,7 +36,7 @@
 </tr>
 </table>
 <hr>
-<h2>"aps core tag library"</h2>
+<h2>Aps Core Tag Library</h2>
 <hr>
 <b>Standard Syntax:</b>
 <br>
@@ -54,14 +54,14 @@
                     &lt;anyxmlelement xmlns:wp="urn:jsptld:/aps-core" /&gt;<br>
 </code>
 <hr>
-<pre>"aps core tag library"</pre>
+<pre>Aps Core Tag Library</pre>
 <p></p>
 <table border="1" cellpadding="3" cellspacing="0" width="100%">
 <tr bgcolor="#CCCCFF" class="TableHeadingColor">
 <td colspan="2"><font size="+2"><b>Tag Library Information</b></font></td>
 </tr>
 <tr>
-<td>Display Name</td><td>"aps core tag library"</td>
+<td>Display Name</td><td>Aps Core Tag Library</td>
 </tr>
 <tr>
 <td>Version</td><td>2.2</td>
@@ -80,28 +80,31 @@
 <td colspan="2"><font size="+2"><b>Tag Summary</b></font></td>
 </tr>
 <tr bgcolor="white" class="TableRowColor">
-<td width="15%"><b><a href="execShowlet.html">execShowlet</a></b></td><td>Triggers the preliminary execution of the showlets.<br/>It can be used <b><b>only</b></b> in the main.jsp.</td>
+<td width="15%"><b><a href="action.html">action</a></b></td><td>Build the URL to call a jsp or a functionality of a servlet defined within the system.<br/> This tag can use the ParameterTag sub-tag to add url parameters.</td>
 </tr>
 <tr bgcolor="white" class="TableRowColor">
 <td width="15%"><b><a href="buildPage.html">buildPage</a></b></td><td>Builds a page generating the output.</td>
 </tr>
 <tr bgcolor="white" class="TableRowColor">
-<td width="15%"><b><a href="show.html">show</a></b></td><td>Defines the position of inclusion of a showlet.<br/> This tag can be used <b>only</b> in a page model.</td>
-</tr>
-<tr bgcolor="white" class="TableRowColor">
-<td width="15%"><b><a href="outputHeadInfo.html">outputHeadInfo</a></b></td><td>Iterates over various information in HTML header displaying them; this tag works in conjunction with other specific sub-tags.<br/> Please note that the body can contain <b>only</b> a sub-tag, or information, at once.<br/> This tag must be used <b>only</b> in a page model.</td>
+<td width="15%"><b><a href="categories.html">categories</a></b></td><td>Return the list of the system categories on SelectItem objects.</td>
 </tr>
 <tr bgcolor="white" class="TableRowColor">
 <td width="15%"><b><a href="checkHeadInfoOuputter.html">checkHeadInfoOuputter</a></b></td><td>This sub-tag verifies the availability of the information to display.<br/> This sub-tag can be used <b>only</b> in a page model, in conjunction with 'outputHeadInfo'.</td>
 </tr>
 <tr bgcolor="white" class="TableRowColor">
-<td width="15%"><b><a href="printHeadInfo.html">printHeadInfo</a></b></td><td>Returns the information to display.<br/> This sub-tag must be used <b>only</b> in a page model, in conjunction with 'outputHeadInfo'.</td>
-</tr>
-<tr bgcolor="white" class="TableRowColor">
 <td width="15%"><b><a href="contentNegotiation.html">contentNegotiation</a></b></td><td>Performs the Content Negotiation, trying to serve the specified mimeType with the given charset. If the mimeType is not accepted by the User Agent it returns the default text/html.</td>
 </tr>
 <tr bgcolor="white" class="TableRowColor">
-<td width="15%"><b><a href="internalServlet.html">internalServlet</a></b></td><td>Tag for the "Internal Servlet" functionality.<br/> Publishes a function served by an internal Servlet; the servlet is invoked from a path specified in the attribute "actionPath" or by the showlet parameter sharing the same name.<br/> This tag can be used <b>only</b> in a showlet.</td>
+<td width="15%"><b><a href="cssURL.html">cssURL</a></b></td><td>Extension of the ResourceURL tag. It returns the URL of the css files.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="currentPage.html">currentPage</a></b></td><td>Returns the requested information held by the current page bean.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="currentShowlet.html">currentShowlet</a></b></td><td>Returns informations about the showlet where the tag resides. To obtain information about a showlet placed in a frame other than the current, use the "frame" attribute.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="execShowlet.html">execShowlet</a></b></td><td>Triggers the preliminary execution of the showlets.<br/>It can be used <b><b>only</b></b> in the main.jsp.</td>
 </tr>
 <tr bgcolor="white" class="TableRowColor">
 <td width="15%"><b><a href="externalFramework.html">externalFramework</a></b></td><td>Tag for the "External Framework" showlet. <br/><b>DEPRECATED</b>; use "internalServlet" instead.</td>
@@ -110,52 +113,49 @@
 <td width="15%"><b><a href="headInfo.html">headInfo</a></b></td><td>Declares the information to insert in the header of the HTML page. The information can be passed as an attribute or, in an indirect manner, through a variable of the page context.<br/> It is mandatory to specify the type of the information.</td>
 </tr>
 <tr bgcolor="white" class="TableRowColor">
-<td width="15%"><b><a href="action.html">action</a></b></td><td>Build the URL to call a jsp or a functionality of a servlet defined within the system.<br/> This tag can use the ParameterTag sub-tag to add url parameters.</td>
-</tr>
-<tr bgcolor="white" class="TableRowColor">
-<td width="15%"><b><a href="url.html">url</a></b></td><td>Generates the complete URL of a portal page.<br/> The URL returned is either returned (and rendered) or placed in the given variable.<br/> To insert parameters in the query string the sub-tag "ParameterTag" is provided.</td>
-</tr>
-<tr bgcolor="white" class="TableRowColor">
-<td width="15%"><b><a href="categories.html">categories</a></b></td><td>Return the list of the system categories on SelectItem objects.</td>
-</tr>
-<tr bgcolor="white" class="TableRowColor">
-<td width="15%"><b><a href="urlPar.html">urlPar</a></b></td><td>This is the sub-tag of the "url" tag.<br/> Adds a parameter in the URL query string generated. <br/><b>DEPRECATED</b>; use ParameterTag instead .</td>
-</tr>
-<tr bgcolor="white" class="TableRowColor">
-<td width="15%"><b><a href="nav.html">nav</a></b></td><td>Generates through successive iterations the so called "navigation" list.<br/> For every target/page being iterated (inserted in the page context) are made available the page code, the title (in the current language) and the link. Is it also possible to check whether the target page is empty -that is, with no configured positions- or not.</td>
-</tr>
-<tr bgcolor="white" class="TableRowColor">
-<td width="15%"><b><a href="currentPage.html">currentPage</a></b></td><td>Returns the requested information held by the current page bean.</td>
-</tr>
-<tr bgcolor="white" class="TableRowColor">
-<td width="15%"><b><a href="pageInfo.html">pageInfo</a></b></td><td>Returns the information of the specified page. This tag can use the sub-tag "ParameterTag" to add url parameters if the info attribute is set to 'url'.</td>
-</tr>
-<tr bgcolor="white" class="TableRowColor">
-<td width="15%"><b><a href="parameter.html">parameter</a></b></td><td>This tag can be used to parameterise other tags.<br/> The parameter value can be added through the 'value' attribute or the body tag. When you declare the param tag, the value can be defined in either a value attribute or as text between the start and the ending of the tag.</td>
-</tr>
-<tr bgcolor="white" class="TableRowColor">
-<td width="15%"><b><a href="currentShowlet.html">currentShowlet</a></b></td><td>Returns informations about the showlet where the tag resides. To obtain information about a showlet placed in a frame other than the current, use the "frame" attribute.</td>
-</tr>
-<tr bgcolor="white" class="TableRowColor">
 <td width="15%"><b><a href="i18n.html">i18n</a></b></td><td>Return the string associated to the given key in the specified language. This string is either returned (and rendered) or can be optionally placed in a page context variable.</td>
-</tr>
-<tr bgcolor="white" class="TableRowColor">
-<td width="15%"><b><a href="pager.html">pager</a></b></td><td>List pager.</td>
-</tr>
-<tr bgcolor="white" class="TableRowColor">
-<td width="15%"><b><a href="resourceURL.html">resourceURL</a></b></td><td>Returns URL of the resources.</td>
-</tr>
-<tr bgcolor="white" class="TableRowColor">
-<td width="15%"><b><a href="cssURL.html">cssURL</a></b></td><td>Extension of the ResourceURL tag. It returns the URL of the css files.</td>
-</tr>
-<tr bgcolor="white" class="TableRowColor">
-<td width="15%"><b><a href="imgURL.html">imgURL</a></b></td><td>Extension of the ResourceURL tag. It returns the URL of the images to display as static content outside the cms.</td>
 </tr>
 <tr bgcolor="white" class="TableRowColor">
 <td width="15%"><b><a href="ifauthorized.html">ifauthorized</a></b></td><td>Toggles the visibility of the elements contained in its body, depending on user permissions.</td>
 </tr>
 <tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="imgURL.html">imgURL</a></b></td><td>Extension of the ResourceURL tag. It returns the URL of the images to display as static content outside the cms.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
 <td width="15%"><b><a href="info.html">info</a></b></td><td>Returns the information of the desired system parameter.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="internalServlet.html">internalServlet</a></b></td><td>Tag for the "Internal Servlet" functionality.<br/> Publishes a function served by an internal Servlet; the servlet is invoked from a path specified in the attribute "actionPath" or by the showlet parameter sharing the same name.<br/> This tag can be used <b>only</b> in a showlet.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="nav.html">nav</a></b></td><td>Generates through successive iterations the so called "navigation" list.<br/> For every target/page being iterated (inserted in the page context) are made available the page code, the title (in the current language) and the link. Is it also possible to check whether the target page is empty -that is, with no configured positions- or not.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="outputHeadInfo.html">outputHeadInfo</a></b></td><td>Iterates over various information in HTML header displaying them; this tag works in conjunction with other specific sub-tags.<br/> Please note that the body can contain <b>only</b> a sub-tag, or information, at once.<br/> This tag must be used <b>only</b> in a page model.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="pageInfo.html">pageInfo</a></b></td><td>Returns the information of the specified page. This tag can use the sub-tag "ParameterTag" to add url parameters if the info attribute is set to 'url'.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="pager.html">pager</a></b></td><td>List pager.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="parameter.html">parameter</a></b></td><td>This tag can be used to parameterise other tags.<br/> The parameter value can be added through the 'value' attribute or the body tag. When you declare the param tag, the value can be defined in either a value attribute or as text between the start and the ending of the tag.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="printHeadInfo.html">printHeadInfo</a></b></td><td>Returns the information to display.<br/> This sub-tag must be used <b>only</b> in a page model, in conjunction with 'outputHeadInfo'.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="resourceURL.html">resourceURL</a></b></td><td>Returns URL of the resources.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="show.html">show</a></b></td><td>Defines the position of inclusion of a showlet.<br/> This tag can be used <b>only</b> in a page model.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="url.html">url</a></b></td><td>Generates the complete URL of a portal page.<br/> The URL returned is either returned (and rendered) or placed in the given variable.<br/> To insert parameters in the query string the sub-tag "ParameterTag" is provided.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="urlPar.html">urlPar</a></b></td><td>This is the sub-tag of the "url" tag.<br/> Adds a parameter in the URL query string generated. <br/><b>DEPRECATED</b>; use ParameterTag instead .</td>
 </tr>
 </table>
               &nbsp;
