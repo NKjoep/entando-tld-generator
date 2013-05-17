@@ -5,8 +5,8 @@ rm -rf ./develop ;
 mkdir -p master/tld ;
 mkdir -p develop/tld ;
 
-git clone git://github.com/entando/entando-core-engine.git 
-git clone git://github.com/entando/entando-plugins-parent.git 
+git clone git://github.com/entando/entando-core-engine.git ;
+git clone git://github.com/entando/entando-plugins-parent.git ; 
 
 cd entando-core-engine ;
 git checkout master ;
