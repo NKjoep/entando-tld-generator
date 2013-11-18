@@ -3,6 +3,6 @@
 ## Usage
 
 ````bash
- $ tld-finder.sh
+ $ tld-generator.sh
 
 ````
