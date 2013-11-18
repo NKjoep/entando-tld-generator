@@ -1,0 +1,5 @@
+./src/aps-core.tld
+./src/apsadmin-core.tld
+./src/apsadmin-form.tld
+./src/jacms-aps-core.tld
+./src/jacms-apsadmin-core.tld
