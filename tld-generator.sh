@@ -27,7 +27,7 @@ function abspath {
   echo $RESULT
   }
 
-echo "Generating Entando Tag Library of any tagged version wewew";
+echo "Generating Entando Tag Library of any tagged version";
 
 ROOTDIR="Entando-Tld-Doc" ;
 
