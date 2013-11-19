@@ -89,9 +89,6 @@ tld() {
 		echo "java jar param $(abspath ../$tag)";
 		java -jar "../../tlddoc.jar" $FILES -d "../$tag" ;
 
-		#cp -r "../tld-$tag/" "../$tag";
-		#rm -rf "../tld-$tag";
-
 		echo "exit $(abspath ../../../$proj)";
 		cd "../../../$proj";
 
